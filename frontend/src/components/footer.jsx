@@ -35,7 +35,7 @@ function Footer() {
         <div className="foot-top h-[1px] bg-white w-0"></div>
         <div className="foot-body flex border-b-2 border-white justify-between pt-[80px] px-5 pb-0 relative">
           <div className="font-semibold foot-comp text-[13vw] leading-[55%]">
-            PhoenixFilms
+            Pheonix Films
           </div>
           <div className="body-right flex flex-col items-end absolute right-4 top-0 h-full justify-evenly ">
             <button className="foot-item">Home</button>

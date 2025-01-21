@@ -11,6 +11,8 @@ const companyLogo = ['comp-logo.png', 'comp-logo-2.png', 'comp-logo-3.svg',]
 const sampleVideos = [
   "sample-vid-2.mp4",
   "sample-vid-3.mp4",
+  "sample-vid-1.mp4",
+  "sample-vid-4.mp4",
 ];
 
 const sampleVideos2 = [
@@ -66,17 +68,18 @@ const Section1 = () => {
   return (
     <>
       <div className="section1 w-full overflow-hidden flex flex-col bg-[#DDDDDD]">
-        <div className="h-screen min-h-[752px] min-w-[1350px] overflow-hidden flex justify-center items-center video-wrapper">
-          <iframe
-            className="responsive-iframe "
-            src="https://player.vimeo.com/video/936995747?muted=1&autoplay=1&loop=1&background=1&app_id=122963"
-            frameborder="0"
-          ></iframe>
+        <div className="h-screen w-screen overflow-hidden flex justify-center items-center video-wrapper">
+          <video
+           muted
+           autoPlay
+           loop
+           className="max-w-none" 
+           src="https://res.cloudinary.com/dpcy2txus/video/upload/v1737466728/jatin/Pheonix_Films_Showreel_jrmbwb.mp4"></video>
         </div>
 
         <div className="w-full flex flex-col px-12 py-8">
-          <div className="font-semibold text-[60px] leading-[100%] text-[#212529] uppercase comp-slogan w-full py-[8vh] ">
-            PhoenixFilms is a production company, bringing stories to life
+          <div className="font-semibold text-[45px] lg:text-[60px] leading-[100%] text-[#212529] uppercase comp-slogan w-full py-[8vh] ">
+            <span>Pheonix Films</span> is a production company, bringing stories to life
             through captivating video and photography.
           </div>
 
@@ -111,13 +114,13 @@ const Section1 = () => {
                   Featured work
                 </div>
               </div>
-              <div className="sample-work-1 w-full grid grid-cols-3 gap-[100px] p-12 ">
+              {/* <div className="sample-work-1 w-full grid grid-cols-3 gap-[100px] p-12 ">
                 {sampleImages2.map((key, i) => (
                   <div key={i} className="sample-img shadow-sm ">
                     <img src={`/images/${key}`} alt="" />
                   </div>
                 ))}
-              </div>
+              </div> */}
 
                  {/* videos  */}
               <div className="sample-work-2 w-full grid grid-cols-1 lg:grid-cols-2 gap-[100px] p-12 ">
