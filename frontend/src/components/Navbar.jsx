@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`w-screen nav flex justify-between px-12 py-1 ${
+        className={`w-screen nav flex justify-between px-12 py-1 font-sans ${
           location.pathname === "/services" || location.pathname === "/work"
             ? "bg-[#DDDDDD]"
             : "bg-transparent"
@@ -51,9 +51,9 @@ const Navbar = () => {
           onClick={() => navigate("/")}
           className="nav-left gap-4 realtive flex justify-center items-center cursor-pointer"
         >
-          <img src="/images/logo.png" className="h-[120px] " alt="" />
+          <img src="/images/logo.png" className="h-12 " alt="" />
         </div>
-        <div className="nav-right relative flex items-center gap-5 text-base xl:text-xl font-bold ">
+        <div className="nav-right relative flex items-center gap-5 text-base xl:text-xl font-semibold ">
           <div
             onClick={() => handleNav()}
             className="nav-item px-3 py-4"
